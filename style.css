@@ -1,0 +1,104 @@
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: black;
+  }
+  
+*/index1/*
+  body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-image:url(images/image\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+  
+  
+  .titre {
+    height: 50vh;
+    width: 75vw;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    font-size: 5rem;
+    color: #FFD456;
+    display: flex;
+    justify-content: center;
+    }
+  
+  .haut{
+    height:50vh ;
+    width:100vw ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+  .bas{
+    height:50vh ;
+    width:100vw ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+  
+  .lesda{
+    height: 40vh;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+  }
+  .imgsda{
+    height: 35vh;
+    width: 20vw;
+    }
+  
+  .lesda1{
+    background-image: url(images/sda1/image\ 2.png);
+  }
+  
+    .lesda .imgsda:last-child {
+      display: none;
+    }
+    
+    .lesda:hover .imgsda:first-child {
+      display: none;
+    }
+    
+    .lesda:hover .imgsda:last-child {
+      display: block;
+    }
+    .imgsda-container {
+      position: relative;
+    }
+    
+    
+   

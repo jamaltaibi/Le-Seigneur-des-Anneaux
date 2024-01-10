@@ -1,86 +1,106 @@
 body {
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    background-image:url(images/image\ 1.png);
-    background-position:center;
-    background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-image:url(images/image\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   }
-  .titre{
-    height: 40vh;
-    width: 75vw;
-    margin: 0;
-    padding: 0;
-    font-weight: 900;
-    font-size: 5rem;
-    color: #FFD456;
+.titre {
+  height: 50vh;
+  width: 75vw;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  font-size: 5rem;
+  color: #FFD456;
+  display: flex;
+  justify-content: center;
+  }
+  .titre1{
+   margin-top: 1vh;
     display: flex;
     justify-content: center;
-  }
-  .haut{
-    height:50vh ;
-    width:100vw ;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #FFD456;
   }
-  .bas{
-    height:50vh ;
-    width:100vw ;
+  .titre2{
+    height: 23vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: #FFD456;
+
   }
-  .imgsda1{
-    height: 40vh;
-    width: 25vw;
-    margin-left: 3%;
-    
+.haut{
+  height:50vh ;
+  width:100vw ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   }
-  .imgsda2{
-    height: 40vh;
-    width: 25vw;
-    margin-left: 3%;
+.bas{
+  height:50vh ;
+  width:100vw ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   }
-  .imgsda3{
-    height: 40vh;
-    width: 25vw;
-  
+
+.lesda{
+  height: 40vh;
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+}
+.imgsda{
+  height: 35vh;
+  width: 20vw;
   }
-  
+.lesda1{
+  height: 35vh;
+  width: 20vw;
+  background-image: url(images/sda1/image\ 2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.lesda2{
+  height: 35vh;
+  width: 20vw;
+  background-image: url(images/sda2/image\ 3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.lesda3{
+  height: 35vh;
+  width: 20vw;
+  background-image: url(images/sda3/image\ 4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 
 
 
-  .modal {
+/* .lesda1 .lesda2 .lesda3 {
     display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.7);
   }
-  
-  .modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    text-align: center;
+  .lesda:hover .imgsda{
+    display: none;
   }
-  
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
+  .lesda1 .lesda2 .lesda3:hover {
+    display: block;
   }
-  
-  .close:hover {
-    color: black;
+  .imgsda-container {
+    position: relative;
   }
-  
+   */
