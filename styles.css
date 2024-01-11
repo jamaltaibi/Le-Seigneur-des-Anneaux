@@ -2,6 +2,8 @@
   font-family: "Aniron" ;
   src: url("./font/anirb___.ttf") ;
 }
+
+
 body {
   height: 100vh;
   width: 100vw;
@@ -11,164 +13,312 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  }
+}
 .titre {
-  height: 10vh;
-  width: 90vw;
+  height: 15vh;
+  width: 100vw;
   margin: 0;
-  margin-top: 3vh;
   padding: 0;
-  font-weight: 900;
-  font-size: 4.5rem;
+  z-index: 1;
+  font-size: 4rem;
   font-family: Aniron ;
   color: #FFD456;
   display: flex;
-  justify-content: end;
-  }
-  .titre1{
-   margin-top: 1vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 900;
-    font-size: 1.3rem;
-    font-family: Aniron;
-    color: #FFD456;
-  }
-  .titre2{
-    height: 23vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 900;
-    font-size: 1.2rem;
-    font-family: Aniron;
-    color: #FFD456;
+  justify-content: center;
+  align-items: center;
+}
 
-  }
 .haut{
   height:40vh ;
   width:100vw ;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  }
+}
 .bas{
-  height:50vh ;
+  height:45vh ;
   width:100vw ;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  }
+}
 
 .lesda{
   height: 40vh;
-  width: 25vw;
+  width: 40vw;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .imgsda{
-  height: 35vh;
-  width: 20vw;
-  }
+  height: 30vh;
+}
 .lesda1{
-  height: 35vh;
-  width: 20vw;
-  background-image: url(images/sda1/image\ 2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  position: relative;
 }
-.lesda2{
-  height: 35vh;
-  width: 20vw;
-  background-image: url(images/sda2/image\ 3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.img2{
+  height: 30vh;
+  display: none;
 }
-.lesda3{
-  height: 35vh;
-  width: 20vw;
-  background-image: url(images/sda3/image\ 4.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
+.titre1{
+  display: none;
+  position:absolute; 
+  top: 0;
+  margin-top: 1vh;
+  font-size: 1rem;
+  font-family: Aniron;
+  color: #FFD456;
 }
-.lesda1 .lesda2 .lesda3 {
-    display: none;
-  }
-  .lesda:hover .imgsda{
-    display: none;
-  }
-  .lesda1 .lesda2 .lesda3:hover {
-    display: block;
-  }
-  .imgsda-container {
-    position: relative;
-  }
+.titre11{
+  display: none;
+  position:absolute; 
+  top: 0;
+  left: 25%;
+  margin-top: 1vh;
+  font-size: 1rem;
+  font-family: Aniron;
+  color: #FFD456;
+}
+ .titre2{
+  display: none;
+  position:absolute; 
+  top: 43%;
+  left: 14%;
+  font-size: 0.9rem;
+  font-family: Aniron;
+  color: #FFD456;
+}
+
+/* Hover */
+.lesda:hover .imgsda{
+  display: none;
+}
+.lesda:hover .img2{
+  display: block;
+}
+.lesda:hover .titre1{
+  display: block;
+}
+.lesda:hover .titre11{
+  display: block;
+}
+.lesda:hover .titre2{
+  display: block;
+}
+
+
+
   
 
-@media screen and (min-width: 800px) and (max-width: 1181px){
-body{
-  height: 100vh;
+
+/* Ordinateur */
+@media screen and (min-width: 770px) and (max-width: 1440px){
+
+.titre {
+  height: 15vh;
   width: 100vw;
   margin: 0;
+  padding: 0;
+  font-size: 2.6rem;
+  font-family: Aniron ;
+  color: #FFD456;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.lesda{
+  height: 40vh;
+  width: 50vw;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.imgsda{
+  height: 30vh;
+}
+.lesda1{
+  position: relative;
+}
+.img2{
+  height: 30vh;
+}
+
+.titre1{
+  display: none;
+  position:absolute; 
+  top: 0;
+  margin-top: 1vh;
+  font-size: 1rem;
+  font-family: Aniron;
+  color: #FFD456;
+}
+ .titre11{
+  display: none;
+  position:absolute; 
+  top: 0;
+  left: 25%;
+  margin-top: 1vh;
+  font-size: 1rem;
+  font-family: Aniron;
+  color: #FFD456;
+}
+ .titre2{
+  display: none;
+  position:absolute; 
+  top: 43%;
+  left: 10%;
+  font-size: 0.9rem;
+  font-family: Aniron;
+  color: #FFD456;
+}
+
+}
+
+
+/* Tablette */
+@media screen and (min-width: 530px) and (max-width: 769px){
+
 .titre {
-  font-size: 3.5rem;
-  }
-  .imgsda{
-    height: 25vh;
-    width: 35vw;
-    }
-  }
-  @media screen and (max-width: 801px){
-    body{
-      height: 100vh;
-      width: 100vw;
-      margin: 0;
-    }
-    .titre {
-      height: 10vh;
-      width: 100vw;
-      font-size: 1.5rem;
-      display: flex;
-      justify-content: center;
-      }
-      .imgsda{
-        height: 20vh;
-        width: 35vw;
-        }
-        .haut{
-          height:25vh ;
-          width:100vw ;
-          display: flex;
-          justify-content:center;
-          }
-          .bas{
-            height:75vh ;
-            width:100vw ;
-            display: flex;
-            flex-direction: column
-            }
-            .lesda{
-              height: 25vh;
-              width: 100vw;
-            }
-  }
+  height: 15vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: Aniron ;
+  color: #FFD456;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lesda{
+  height: 40vh;
+  width: 50vw;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.imgsda{
+  height: 21.5vh;
+}
+.lesda1{
+  position: relative;
+}
+.img2{
+  height: 21.5vh;
+}
+
+.titre1{
+  display: none;
+  position:absolute; 
+  top: 0;
+  left: 3%;
+  margin-top: 1vh;
+  font-size: 0.7rem;
+  font-family: Aniron;
+  color: #FFD456;
+}
+ .titre11{
+  display: none;
+  position:absolute; 
+  top: 0;
+  left: 25%;
+  margin-top: 1vh;
+  font-size: 0.7rem;
+  font-family: Aniron;
+  color: #FFD456;
+}
+ .titre2{
+  display: none;
+  position:absolute; 
+  top: 43%;
+  left: 14%;
+  font-size: 0.6rem;
+  font-family: Aniron;
+  color: #FFD456;
+}
+}
 
 
-/* .lesda1 .lesda2 .lesda3 {
-    display: none;
-  }
-  .lesda:hover .imgsda{
-    display: none;
-  }
-  .lesda1 .lesda2 .lesda3:hover {
-    display: block;
-  }
-  .imgsda-container {
-    position: relative;
-  }
-   */
+/* Télephone */
+@media screen and (max-width: 529px){
+
+.titre {
+  height: 15vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  font-family: Aniron ;
+  color: #FFD456;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.haut{
+  height:25vh ;
+  width:100vw ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bas{
+  height:50vh ;
+  width:100vw ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lesda{
+  height: 25vh;
+  width: 100vw;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.imgsda{
+  height: 20vh;
+}
+.lesda1{
+  position: relative;
+}
+.img2{
+  height: 20vh;
+}
+
+.titre1{
+  display: none;
+  position:absolute; 
+  top: 0;
+  left:5%;
+  margin-top: 1vh;
+  font-size: 0.6rem;
+  font-family: Aniron;
+  color: #FFD456;
+}
+ .titre11{
+  display: none;
+  position:absolute; 
+  top: 0;
+  left: 25%;
+  margin-top: 1vh;
+  font-size: 0.6rem;
+  font-family: Aniron;
+  color: #FFD456;
+}
+ .titre2{
+  display: none;
+  position:absolute; 
+  top: 43%;
+  left: 16%;
+  font-size: 0.5rem;
+  font-family: Aniron;
+  color: #FFD456;
+}
+}
+
+
