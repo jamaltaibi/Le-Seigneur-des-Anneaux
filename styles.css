@@ -2,14 +2,14 @@
   font-family: "Aniron" ;
   src: url("./font/anirb___.ttf") ;
 }
-
+/* Format ordinateur */
 
 body {
   height: 100vh;
   width: 100vw;
   margin: 0;
   padding: 0;
-  background-image:url(images/image\ 1.png);
+  background-image:url(images/image\ 188.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -19,73 +19,90 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
-  z-index: 1;
-  font-size: 4rem;
+  font-size: 2.6rem;
   font-family: Aniron ;
   color: #FFD456;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.haut{
-  height:40vh ;
-  width:100vw ;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.texte{
+  height: 10vh;
+  width: 100vw;
+}
+.accroche{
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: Aniron ;
+  color:white;
+}
+.accroche2{
+  display: none;
+  height: 10vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: Aniron ;
+  color:white;
 }
 .bas{
-  height:45vh ;
+  height:70vh ;
   width:100vw ;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: end;
 }
-
 .lesda{
-  height: 40vh;
-  width: 40vw;
+  height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .imgsda{
-  height: 30vh;
+  height: 25vh;
 }
 .lesda1{
   position: relative;
 }
 .img2{
-  height: 30vh;
+  height: 25vh;
   display: none;
 }
-
 .titre1{
   display: none;
   position:absolute; 
   top: 0;
-  margin-top: 1vh;
-  font-size: 1rem;
+  left: 0;
+  margin: 0;
+  font-size: 0.8rem;
   font-family: Aniron;
   color: #FFD456;
+  text-align: center;
 }
 .titre11{
   display: none;
   position:absolute; 
   top: 0;
-  left: 25%;
-  margin-top: 1vh;
-  font-size: 1rem;
+  left: 13%;
+  margin: 0;
+  font-size: 0.8rem;
   font-family: Aniron;
   color: #FFD456;
+  text-align: center;
 }
  .titre2{
   display: none;
   position:absolute; 
-  top: 43%;
-  left: 14%;
-  font-size: 0.9rem;
+  top: 45%;
+  margin: 0;
+  left: 2%;
+  text-align: center;
+  font-size: 0.7rem;
   font-family: Aniron;
   color: #FFD456;
 }
@@ -106,219 +123,75 @@ body {
 .lesda:hover .titre2{
   display: block;
 }
-
-
-
-  
-
-
-/* Ordinateur */
-@media screen and (min-width: 770px) and (max-width: 1440px){
-
-.titre {
-  height: 15vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  font-size: 2.6rem;
-  font-family: Aniron ;
-  color: #FFD456;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.lesda{
-  height: 40vh;
-  width: 50vw;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-}
-.imgsda{
-  height: 30vh;
-}
-.lesda1{
-  position: relative;
-}
-.img2{
-  height: 30vh;
-}
-
-.titre1{
+.texte:hover .accroche{
   display: none;
-  position:absolute; 
-  top: 0;
-  margin-top: 1vh;
-  font-size: 1rem;
-  font-family: Aniron;
-  color: #FFD456;
 }
- .titre11{
-  display: none;
-  position:absolute; 
-  top: 0;
-  left: 25%;
-  margin-top: 1vh;
-  font-size: 1rem;
-  font-family: Aniron;
-  color: #FFD456;
+.texte:hover .accroche2{
+  display: block;
 }
- .titre2{
-  display: none;
-  position:absolute; 
-  top: 43%;
-  left: 10%;
-  font-size: 0.9rem;
-  font-family: Aniron;
-  color: #FFD456;
-}
-
-}
-
 
 /* Tablette */
-@media screen and (min-width: 530px) and (max-width: 769px){
+@media screen and (min-width: 581px) and (max-width: 1180px){
 
 .titre {
-  height: 15vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
   font-size: 1.5rem;
-  font-family: Aniron ;
-  color: #FFD456;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
-.lesda{
-  height: 40vh;
-  width: 50vw;
-  display: flex;
-  justify-content:center;
-  align-items: center;
+.accroche{
+  font-size: 1rem;
+}
+.accroche2{
+  font-size: 1rem;
 }
 .imgsda{
-  height: 21.5vh;
-}
-.lesda1{
-  position: relative;
+  height: 15vh;
 }
 .img2{
-  height: 21.5vh;
+  height: 15vh;
 }
-
 .titre1{
-  display: none;
-  position:absolute; 
-  top: 0;
-  left: 3%;
-  margin-top: 1vh;
-  font-size: 0.7rem;
-  font-family: Aniron;
-  color: #FFD456;
+  font-size: 0.5rem; 
 }
  .titre11{
-  display: none;
-  position:absolute; 
-  top: 0;
-  left: 25%;
-  margin-top: 1vh;
-  font-size: 0.7rem;
-  font-family: Aniron;
-  color: #FFD456;
+  font-size: 0.5rem;
 }
  .titre2{
-  display: none;
-  position:absolute; 
-  top: 43%;
-  left: 14%;
-  font-size: 0.6rem;
-  font-family: Aniron;
-  color: #FFD456;
+  font-size: 0.4rem;
 }
 }
-
-
 /* Télephone */
-@media screen and (max-width: 529px){
+@media screen and (max-width: 580px){
 
 .titre {
-  height: 15vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
   font-size: 1.2rem;
-  font-family: Aniron ;
-  color: #FFD456;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
-.haut{
-  height:25vh ;
-  width:100vw ;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.accroche{
+  font-size: 0.6rem;
+}
+.accroche2{
+  font-size: 0.6rem;
 }
 .bas{
-  height:50vh ;
-  width:100vw ;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-
 .lesda{
   height: 25vh;
   width: 100vw;
-  display: flex;
-  justify-content:center;
-  align-items: center;
 }
 .imgsda{
-  height: 20vh;
-}
-.lesda1{
-  position: relative;
+  height: 13vh;
 }
 .img2{
-  height: 20vh;
+  height: 13vh;
 }
-
 .titre1{
-  display: none;
-  position:absolute; 
-  top: 0;
-  left:5%;
-  margin-top: 1vh;
-  font-size: 0.6rem;
-  font-family: Aniron;
-  color: #FFD456;
+  font-size: 0.4rem;
 }
  .titre11{
-  display: none;
-  position:absolute; 
-  top: 0;
-  left: 25%;
-  margin-top: 1vh;
-  font-size: 0.6rem;
-  font-family: Aniron;
-  color: #FFD456;
+  font-size: 0.4rem;
 }
  .titre2{
-  display: none;
-  position:absolute; 
-  top: 43%;
-  left: 16%;
-  font-size: 0.5rem;
-  font-family: Aniron;
-  color: #FFD456;
+  font-size: 0.35rem;
 }
 }
-
-
