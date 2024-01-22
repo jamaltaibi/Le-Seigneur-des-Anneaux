@@ -1,4 +1,28 @@
+const accueil = document.getElementById(`accueil`);
+const le1 = document.getElementById('le1');
+const le2 = document.getElementById(`le2`);
+const le3 = document.getElementById('le3');
+const clique1 = document.getElementById('clique1');
+const clique2 = document.getElementById('clique2');
+const clique3 = document.getElementById('clique3');
+
+const closeModal = document.getElementById('closeModal');
+const closeModal2 = document.getElementById('closeModal2');
+const closeModal3 = document.getElementById('closeModal3');
+
+
+
 // "la communtauté de l'anneau images film"
+clique1.addEventListener('click', () => {
+  accueil.style.display = 'none';
+  le1.style.display = "Block";
+})
+
+closeModal.addEventListener('click', function () {
+  le1.style.display = 'none';
+  accueil.style.display = 'block';
+});
+
 document.addEventListener("DOMContentLoaded", function(){
     nbr=10;
     p=0;
@@ -41,6 +65,16 @@ function afficherMasquer(){
 });
 
 // // "les deux tour images film"
+clique2.addEventListener('click', () => {
+  accueil.style.display = 'none';
+  le2.style.display = "block";
+})
+
+closeModal2.addEventListener('click', function () {
+  le2.style.display = 'none';
+  accueil.style.display = 'block';
+});
+
 document.addEventListener("DOMContentLoaded", function(){
   nbr=10;
   p=0;
@@ -83,6 +117,15 @@ function afficherMasquer(){
 });
 
 // // // "le retour du roi images film"
+clique3.addEventListener('click', () => {
+  accueil.style.display = 'none';
+  le3.style.display = "block";
+})
+
+closeModal3.addEventListener('click', function () {
+  le3.style.display = 'none';
+  accueil.style.display = 'block';
+});
 document.addEventListener("DOMContentLoaded", function(){
   nbr=10;
   p=0;

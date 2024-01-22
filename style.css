@@ -9,10 +9,6 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
-  background-image:url(images/image\ 188.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .film{
   height: 100vh;
@@ -23,6 +19,17 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+#le1{
+  display: none;
+}
+#le2{
+  display: none;
+}
+#le3{
+  display: none;
+}
+
 .bas{
   height:65vh ;
   width:100vw ;
@@ -125,6 +132,25 @@ body {
   font-size: 0.6rem;
   font-family: Aniron;
   color: #FFD456;
+  cursor: pointer;
+}
+
+.close {
+  color:black;
+  opacity: 0.4;
+  transition:all 0.3s ease;
+  position: absolute;
+  top: 0%;
+  right:2%;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color:black;
+  opacity: 1;
+  transform:scale(1.5);
 }
 
 /* Caroussel*/
