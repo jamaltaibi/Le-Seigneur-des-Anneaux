@@ -13,76 +13,69 @@ const closeModal3 = document.getElementById('closeModal3');
 
 
 // "la communtauté de l'anneau images film"
+document.addEventListener("DOMContentLoaded", function(){
+  nb=10;
+  p=0;
+  container=document.getElementById("container");
+  g=document.getElementById("g");
+  d=document.getElementById("d");
+  container.style.width=(65*nb)+"vw";
+  for (i=1;i<=nb;i++){
+    div=document.createElement("div")
+    div.className="lca";
+    div.style.backgroundImage="url('../images/lcda/image"+i+".png')"
+    container.appendChild(div);
+  }
+  afficherMasquer();
+
+g.onclick=function(){
+if(p<0)
+  p++;
+  container.style.transform="translate("+p*65+"vw)";
+  container.style.transition="all 0.5s ease";
+  afficherMasquer();
+}
+d.onclick=function(){
+if(p>-nb+1)
+  p--;
+  container.style.transform="translate("+p*65+"vw)";
+  container.style.transition="all 0.5s ease"; 
+  afficherMasquer();
+} 
+
+function afficherMasquer(){
+  if(p==-nb+1)
+    d.style.visibility="hidden";
+  else
+    d.style.visibility="visible";
+  if(p==0)
+    g.style.visibility="hidden";
+  else
+    g.style.visibility="visible";
+}
+});
 clique1.addEventListener('click', () => {
   accueil.style.display = 'none';
   le1.style.display = "Block";
 })
-
 closeModal.addEventListener('click', function () {
   le1.style.display = 'none';
   accueil.style.display = 'block';
-});
-
-document.addEventListener("DOMContentLoaded", function(){
-    nbr=10;
-    p=0;
-    container=document.getElementById("container");
-    g=document.getElementById("g");
-    d=document.getElementById("d");
-    container.style.width=(65*nbr)+"vw";
-    for (i=1;i<=nbr;i++){
-      div=document.createElement("div")
-      div.className="lca";
-      div.style.backgroundImage="url('../images/lcda/image"+i+".png')"
-      container.appendChild(div);
-    }
-    afficherMasquer();
-
-g.onclick=function(){
-  if(p<0)
-    p++;
-    container.style.transform="translate("+p*65+"vw)";
-    container.style.transition="all 0.5s ease";
-    afficherMasquer();
-}
-d.onclick=function(){
-  if(p>-nbr+1)
-    p--;
-    container.style.transform="translate("+p*65+"vw)";
-    container.style.transition="all 0.5s ease"; 
-    afficherMasquer();
-  } 
-function afficherMasquer(){
-    if(p==-nbr+1)
-      d.style.visibility="hidden";
-    else
-      d.style.visibility="visible";
-    if(p==0)
-      g.style.visibility="hidden";
-    else
-      g.style.visibility="visible";
-  }
+  p = 0; 
+  container.style.transform = "translate(" + p * 65 + "vw)";
+  container.style.transition = "none"; // 
+  afficherMasquer();
 });
 
 // // "les deux tour images film"
-clique2.addEventListener('click', () => {
-  accueil.style.display = 'none';
-  le2.style.display = "block";
-})
-
-closeModal2.addEventListener('click', function () {
-  le2.style.display = 'none';
-  accueil.style.display = 'block';
-});
-
 document.addEventListener("DOMContentLoaded", function(){
-  nbr=10;
+  nbrr=10;
   p=0;
   container2=document.getElementById("container2");
-  g=document.getElementById("g");
-  d=document.getElementById("d");
-  container2.style.width=(65*nbr)+"vw";
-  for (i=1;i<=nbr;i++){
+  ga=document.getElementById("ga");
+  dr=document.getElementById("dr");
+  container2.style.width=(65*nbrr)+"vw";
+  for (i=1;i<=nbrr;i++){
     div=document.createElement("div")
     div.className="lca";
     div.style.backgroundImage="url('../images/ldt/image"+i+".png')"
@@ -98,14 +91,14 @@ if(p<0)
   afficherMasquer();
 }
 dr.onclick=function(){
-  if(p>-nbr+1)
+  if(p>-nbrr+1)
     p--;
     container2.style.transform="translate("+p*65+"vw)";
     container2.style.transition="all 0.5s ease";
   afficherMasquer();
 }
 function afficherMasquer(){
-  if(p==-nbr+1)
+  if(p==-nbrr+1)
     dr.style.visibility="hidden";
   else
     dr.style.visibility="visible";
@@ -115,23 +108,27 @@ function afficherMasquer(){
     ga.style.visibility="visible";
 }
 });
+clique2.addEventListener('click', () => {
+  accueil.style.display = 'none';
+  le2.style.display = "block";
+})
+closeModal2.addEventListener('click', function () {
+  le2.style.display = 'none';
+  accueil.style.display = 'block';
+  p = 0; 
+  container2.style.transform = "translate(" + p * 65 + "vw)";
+  container2.style.transition = "none"; // 
+  afficherMasquer();
+  
+});
 
 // // // "le retour du roi images film"
-clique3.addEventListener('click', () => {
-  accueil.style.display = 'none';
-  le3.style.display = "block";
-})
-
-closeModal3.addEventListener('click', function () {
-  le3.style.display = 'none';
-  accueil.style.display = 'block';
-});
 document.addEventListener("DOMContentLoaded", function(){
-  nbr=10;
+  nbr=19;
   p=0;
   container3=document.getElementById("container3");
-  g=document.getElementById("g");
-  d=document.getElementById("d");
+  gau=document.getElementById("gau");
+  dro=document.getElementById("dro");
   container3.style.width=(65*nbr)+"vw";
   for (i=1;i<=nbr;i++){
     div=document.createElement("div")
@@ -165,4 +162,16 @@ function afficherMasquer(){
   else
     gau.style.visibility="visible";
 }
+});
+clique3.addEventListener('click', () => {
+  accueil.style.display = 'none';
+  le3.style.display = "block";
+})
+closeModal3.addEventListener('click', function () {
+  le3.style.display = 'none';
+  accueil.style.display = 'block';
+  p = 0; 
+  container3.style.transform = "translate(" + p * 65 + "vw)";
+  container3.style.transition = "none"; // 
+  afficherMasquer();
 });

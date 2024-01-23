@@ -148,7 +148,7 @@ body {
 }
 
 .close:hover {
-  color:black;
+  color:white;
   opacity: 1;
   transform:scale(1.5);
 }
