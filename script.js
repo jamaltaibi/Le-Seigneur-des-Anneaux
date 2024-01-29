@@ -60,7 +60,7 @@ function autoScroll() {
   container.style.transition = "all 0.5s ease";
   afficherMasquer();
 }
-setInterval(autoScroll, 5000);
+setInterval(autoScroll, 4000);
 
 clique1.addEventListener('click', () => {
   accueil.style.display = 'none';
@@ -72,9 +72,10 @@ closeModal.addEventListener('click', function () {
   le1.style.display = 'none';
   accueil.style.display = 'block';
   p = 0; 
-  
   container.style.transform = "translate(" + p * 60 + "vw)";
   container.style.transition = "none"; 
+
+  window.location.reload();
 });
 });
 
@@ -127,21 +128,22 @@ function autoScroll2() {
   container2.style.transition = "all 0.5s ease";
   afficherMasquer();
 }
-setInterval(autoScroll2, 5000);
+setInterval(autoScroll2, 4000);
 
 clique2.addEventListener('click', () => {
   accueil.style.display = 'none';
   le2.style.display = "block";
+  
 })
 closeModal2.addEventListener('click', function () {
   le2.style.display = 'none';
   accueil.style.display = 'block';
   p2 = 0; 
-
   container2.style.transform = "translate(" + p2 * 60 + "vw)";
   container2.style.transition = "none"; // 
   afficherMasquer();
-  
+
+  window.location.reload();
 });
 });
 
@@ -195,11 +197,12 @@ function autoScroll3() {
   container3.style.transition = "all 0.5s ease";
   afficherMasquer();
 }
-setInterval(autoScroll3, 5000);
+setInterval(autoScroll3, 4000);
 
 clique3.addEventListener('click', () => {
   accueil.style.display = 'none';
   le3.style.display = "block";
+  
 })
 closeModal3.addEventListener('click', function () {
   le3.style.display = 'none';
@@ -208,5 +211,7 @@ closeModal3.addEventListener('click', function () {
   container3.style.transform = "translate(" + p3 * 60 + "vw)";
   container3.style.transition = "none"; // 
   afficherMasquer();
+  window.location.reload();
 });
 });
+
