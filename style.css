@@ -155,27 +155,30 @@ body {
 
 /* Caroussel*/
 #caroussel{
-  width: 65vw;
-  height: 55vh;
+  height: 65vh;
+  width: 60vw;
+  margin: 0;
   border: solid 4px #fff;
   box-shadow: 10px 10px 400px 74px rgba(0,0,0,1);
   -webkit-box-shadow: 10px 10px 400px 74px rgba(0,0,0,1);
   -moz-box-shadow: 10px 10px 400px 74px rgba(0,0,0,1);
   position: relative;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 #container{
-  width: 65vw;
-  height: 55vh;
+  height: 65vh ;
+  margin:0;
 }
 .lca{
-  width: 65vw;
-  height: 55vh;
+  height: 65vh;
+  width: 60vw;
   margin: 0;
   display: inline-block;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-position:center;
+  background-size: contain; 
 }
 .fleche{
   position: absolute;
@@ -311,6 +314,19 @@ body {
  .titre2{
   font-size: 0.4rem;
 }
+
+#caroussel{
+  height: 40vh;
+  width: 60vw;
+}
+#container{
+  height: 40vh ;
+}
+.lca{
+  height: 40vh;
+  width: 60vw;
+}
+
 }
 /* Format télephone */
 @media screen and (max-width: 580px){
@@ -347,5 +363,17 @@ body {
 }
  .titre2{
   font-size: 0.35rem;
+}
+
+#caroussel{
+  height: 24vh;
+  width: 60vw;
+}
+#container{
+  height: 24vh ;
+}
+.lca{
+  height: 24vh;
+  width: 60vw;
 }
 }
