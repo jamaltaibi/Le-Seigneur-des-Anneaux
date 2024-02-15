@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
   for (i=1;i<=nb;i++){
     div=document.createElement("div")
     div.className="lca";
-    div.style.backgroundImage="url('../images/lcda/image"+i+".png')"
+    div.style.backgroundImage="url('images/lcda/image"+i+".png')"
     container.appendChild(div);
   }
 
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function(){
   for (i=1;i<=nbrr;i++){
     div=document.createElement("div")
     div.className="lca";
-    div.style.backgroundImage="url('../images/ldt/image"+i+".png')"
+    div.style.backgroundImage="url('images/ldt/image"+i+".png')"
     container2.appendChild(div);
   }
   afficherMasquer();
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function(){
   for (i=1;i<=nbr;i++){
     div=document.createElement("div")
     div.className="lca";
-    div.style.backgroundImage="url('../images/lrdr/image"+i+".png')"
+    div.style.backgroundImage="url('images/lrdr/image"+i+".png')"
     container3.appendChild(div);
   }
   afficherMasquer();
